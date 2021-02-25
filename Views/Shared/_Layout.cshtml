@@ -4,13 +4,32 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - BookStoreMorey</title>
-    <!--<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />-->
-    <!--<link rel="stylesheet" href="~/css/site.css" />-->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
     <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
 </head>
 <body style="background-color: #913f0f;">
-    <div style="color:white;">
-        @RenderBody()
+    <div class="bg-light text-black-50 p-2">
+        <span class="navbar-brand ml-3">BOOK STORE</span>
+    </div>
+    <div class="row m-1 p-1">
+        <div class="col-3">
+            <h1>Reasons To Read</h1>
+            <ul class="list-group text-black-50" >
+                <li class="list-group-item">Stress Relief</li>
+                <li class="list-group-item">Increase Cognitive Function</li>
+                <li class="list-group-item">Use Imagination</li>
+            </ul>
+        </div>
+
+        <div class="col-9" style="color:white;">
+            @RenderBody()
+        </div>
     </div>
 </body>
+<footer style="background-color:white;">
+    <div class="text-center text-white-50">
+        <span class="card-footer" style="color:black;">Morey Copyright 2021</span>
+    </div>
+</footer>
 </html>

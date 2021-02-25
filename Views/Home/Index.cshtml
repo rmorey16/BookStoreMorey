@@ -2,21 +2,31 @@
     ViewData["Title"] = "Home Page";
 }
 
-@model IQueryable<Book>
-<header>
-    <h1>Books Heck Yeah</h1>
-    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
-</header>
+@model BookListViewModel
 
 
-@foreach (var x in Model)
+@foreach (var x in Model.Books)
 {
-    <div>
-        <h3>@x.Title</h3>
-        <p>Author: @x.Author</p>
-        <p>Publisher: @x.Publisher</p>
-        <p>ISBN: @x.ISBN</p>
-        <p>Category: @x.Category</p>
-        <p>Price: $@x.Price</p>
+    <div class="card card-outline-light m-1 p-1" style="background-color: #913f0f;">
+        <div class="bg-faded p-1">
+            <h3>@x.Title</h3>
+            <p>Author: @x.AuthorFName @x.AuthorLName</p>
+            <p>Publisher: @x.Publisher</p>
+            <p>ISBN: @x.ISBN</p>
+            <p>Classification: @x.Classification</p>
+            <p>Category: @x.Category</p>
+            <span class="badge badge-pill badge-light" style="float:right">
+                <p>Price: $@x.Price</p>
+            </span>   
+            <p>Number of Pages: @x.NumPages</p>
+        </div>
+        
     </div>
 }
+
+<div page-model="@Model.PagingInfo" page-action="Index" 
+     page-classes-enabled="true" 
+     page-class ="btn"
+     page-class-normal="btn-outline-light"
+     page-class-selected="btn-primary"
+     class="btn-group pull-right m-1"></div>

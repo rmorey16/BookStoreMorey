@@ -25,94 +25,159 @@ namespace BookStoreMorey.Models
                     new Book
                     {
                         Title = "Les Miserables",
-                        Author = "Victor Hugo",
+                        AuthorFName = "Victor", 
+                        AuthorLName = "Hugo",
                         Publisher = "Signet",
                         ISBN = "978-0451419439",
-                        Category = "Fiction, Classic",
-                        Price = 9.95
+                        Classification = "Fiction",
+                        Category = "Classic",
+                        Price = 9.95,
+                        NumPages = 1488
                     },
                     new Book
                     {
                         Title = "Team of Rivals",
-                        Author = "Doris Kearns Goodwin",
+                        AuthorFName = "Doris Kearns",
+                        AuthorLName = "Goodwin",
                         Publisher = "Simon & Schuster",
                         ISBN = "978-0743270755",
-                        Category = "Non-Fiction, Biography",
-                        Price = 14.58
+                        Classification = "Non-Fiction",
+                        Category = "Biography",
+                        Price = 14.58,
+                        NumPages = 944
                     },
                     new Book
                     {
                         Title = "The Snowball",
-                        Author = "Alice Schroeder",
+                        AuthorFName = "Alice",
+                        AuthorLName = "Schroeder",
                         Publisher = "Bantam",
                         ISBN = "978-0553384611",
-                        Category = "Non-Fiction, Biography",
-                        Price = 21.54
+                        Classification = "Non-Fiction",
+                        Category = "Biography",
+                        Price = 21.54,
+                        NumPages = 832
                     },
                     new Book
                     {
                         Title = "America Ulysses",
-                        Author = "Ronald C. White",
+                        AuthorFName = "Ronald C. ",
+                        AuthorLName= "White",
                         Publisher = "Random House",
                         ISBN = "978-0812981254",
-                        Category = "Non-Fiction, Biography",
-                        Price = 11.61
+                        Classification = "Non-Fiction",
+                        Category = "Biography",
+                        Price = 11.61,
+                        NumPages = 864
                     },
                     new Book
                     {
                         Title = "Unbroken",
-                        Author = "Laura Hillenbrand",
+                        AuthorFName = "Laura", 
+                        AuthorLName = "Hillenbrand",
                         Publisher = "Random House",
                         ISBN = "978-0812974492",
-                        Category = "Non-Fiction, Historical",
-                        Price = 13.33
+                        Classification = "Non-Fiction",
+                        Category = "Historical",
+                        Price = 13.33,
+                        NumPages = 528
                     },
                     new Book
                     {
                         Title = "The Great Train Robbery",
-                        Author = "Michael Crichton",
+                        AuthorFName = "Michael",
+                        AuthorLName= "Crichton",
                         Publisher = "Vintage",
                         ISBN = "978-0804171281",
-                        Category = "Non-Fiction, Historical Fiction",
-                        Price = 15.95
+                        Classification = "Non-Fiction",
+                        Category = "Historical Fiction",
+                        Price = 15.95, 
+                        NumPages = 288
                     },
                     new Book
                     {
                         Title = "Deep Work",
-                        Author = "Cal Newport",
+                        AuthorFName = "Cal", 
+                        AuthorLName = "Newport",
                         Publisher = "Grand Central Publishing",
                         ISBN = "978-1455586691",
-                        Category = "Non-Fiction, Self-Help",
-                        Price = 14.99
+                        Classification = "Non-Fiction",
+                        Category = "Self-Help",
+                        Price = 14.99, 
+                        NumPages = 304
                     },
                     new Book
                     {
                         Title = "It's Your Ship",
-                        Author = "Michael Abrashoff",
+                        AuthorFName = "Michael",
+                        AuthorLName= "Abrashoff",
                         Publisher = "Grand Central Publishing",
                         ISBN = "978-1455523023",
-                        Category = "Non-Fiction, Self-Help",
-                        Price = 21.66
+                        Classification = "Non-Fiction",
+                        Category = "Self-Help",
+                        Price = 21.66, 
+                        NumPages = 240
                     },
                     new Book
                     {
                         Title = "The Virgin Way",
-                        Author = "Richard Branson",
+                        AuthorFName = "Richard",
+                        AuthorLName = "Branson",
                         Publisher = "Portfolio",
                         ISBN = "978-1591847984",
-                        Category = "Non-Fiction, Business",
-                        Price = 29.16
+                        Classification = "Non-Fiction",
+                        Category = "Business",
+                        Price = 29.16, 
+                        NumPages = 400
                     },
                     new Book
                     {
                         Title = "Sycamore Row",
-                        Author = "John Grisham",
+                        AuthorFName = "John",
+                        AuthorLName= "Grisham",
                         Publisher = "Bantam",
                         ISBN = "978-0553393613",
-                        Category = "Fiction, Thrillers",
-                        Price = 15.03
-                    }
-                    );
+                        Classification = "Fiction",
+                        Category = "Thrillers",
+                        Price = 15.03, 
+                        NumPages = 642
+                    },
+                    new Book
+                    {
+                        Title = "Way of Kings",
+                        AuthorFName = "Brandon",
+                        AuthorLName = "Sanderson",
+                        Publisher = "Tor Books",
+                        ISBN = "978-0765326355",
+                        Classification = "Fiction",
+                        Category = "High fantasy",
+                        Price = 9.59, 
+                        NumPages = 1007
+                    },
+                    new Book
+                    {
+                        Title = "The Amulet of Samarkand",
+                        AuthorFName = "Jonathan",
+                        AuthorLName = "Stroud",
+                        Publisher = "Doubleday",
+                        ISBN = "078-6818590000",
+                        Classification = "Fiction",
+                        Category = "Children's Fantasy",
+                        Price = 9.99, 
+                        NumPages = 462
+                    },
+                    new Book
+                    {
+                        Title = "The Martian",
+                        AuthorFName = "Andy",
+                        AuthorLName = "Weir",
+                        Publisher = "Self Published (2011), Crown (2014)",
+                        ISBN = "978-0804139021",
+                        Classification = "Fiction",
+                        Category = "Sci-Fi",
+                        Price = 9.36, 
+                        NumPages = 369
+                    });
                 context.SaveChanges();
             }
         }
