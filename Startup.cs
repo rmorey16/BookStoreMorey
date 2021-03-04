@@ -57,13 +57,23 @@ namespace BookStoreMorey
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapControllerRoute("catpage",
+                    "{category}/{page:int}",
+                    new { Controller = "Home", action = "Index" });
+
+                endpoints.MapControllerRoute("page",
+                    "Books/P{page:int}",
+                    new { Controller = "Home", action = "Index" });
+
+                endpoints.MapControllerRoute("category",
+                    "{category}",
+                    new { Controller = "Home", action = "Index", page = 1 });
+
+
                 endpoints.MapControllerRoute(
                     "pagination",
                     "Books/P{page}",
-                    new {Controller = "Home", action = "Index"}
-                    //name: "default",
-                    //pattern: "{controller=Home}/{action=Index}/{id?}"
-                    );
+                    new {Controller = "Home", action = "Index"});
 
                 endpoints.MapDefaultControllerRoute();
             });
