@@ -7,28 +7,32 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
     <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/b0ee4d56e2.js" crossorigin="anonymous"></script>
 </head>
 <body style="background-color: #913f0f;">
     <div class="bg-light text-black-50 p-2">
         <span class="navbar-brand ml-3">BOOK STORE</span>
-    </div>
-    <div class="row m-1 p-1">
-        <div class="col-3">
-            <h1>Reasons To Read</h1>
-            <ul class="list-group text-black-50" >
-                <li class="list-group-item">Stress Relief</li>
-                <li class="list-group-item">Increase Cognitive Function</li>
-                <li class="list-group-item">Use Imagination</li>
-            </ul>
-            <br />
-            <br />
-            <vc:navigation-menu />
+        <div class="col-6 text-right">
+            <vc:cart-summary />
         </div>
+    </div>
+        <div class="row m-1 p-1">
+            <div class="col-3">
+                <h1>Reasons To Read</h1>
+                <ul class="list-group text-black-50">
+                    <li class="list-group-item">Stress Relief</li>
+                    <li class="list-group-item">Increase Cognitive Function</li>
+                    <li class="list-group-item">Use Imagination</li>
+                </ul>
+                <br />
+                <br />
+                <vc:navigation-menu />
+            </div>
 
-        <div class="col-9" style="color:white;">
-            @RenderBody()
+            <div class="col-9" style="color:white;">
+                @RenderBody()
+            </div>
         </div>
-    </div>
 </body>
 <footer style="background-color:white;">
     <div class="text-center text-white-50">
